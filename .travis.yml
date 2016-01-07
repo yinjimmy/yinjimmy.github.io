@@ -9,10 +9,10 @@ branches:
 
 before_install:
 - openssl aes-256-cbc -K $encrypted_55310d269300_key -iv $encrypted_55310d269300_iv
-  -in id_rsa_ci.enc -out ~/.ssh/id_rsa_ci -d
-- chmod 600 ~/.ssh/id_rsa_ci
+  -in id_rsa.enc -out ~/.ssh/id_rsa -d
+- chmod 600 ~/.ssh/id_rsa
 - eval $(ssh-agent)
-- ssh-add ~/.ssh/id_rsa_ci
+- ssh-add ~/.ssh/id_rsa
 - cp ssh_config ~/.ssh/config
 - git config --global user.name "Jimmy Yin"
 - git config --global user.email jimmy.yin5@gmail.com
@@ -28,3 +28,4 @@ script:
 - hexo clean
 - hexo g
 - hexo d
+
