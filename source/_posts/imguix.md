@@ -1,3 +1,8 @@
+---
+title: imguix
+tags: tech
+---
+
 # imguix
 
 imguix 是一个基于 cocos2d-x-3.8.1 预编译库，集成 [imgui](imgui) 的项目。
