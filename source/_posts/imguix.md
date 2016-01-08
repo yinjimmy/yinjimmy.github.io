@@ -1,6 +1,7 @@
 ---
 title: imguix
 tags: tech
+date: 2016-01-08
 ---
 
 # imguix
