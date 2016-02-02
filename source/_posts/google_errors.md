@@ -30,3 +30,10 @@ date: 2016-01-22
 2. android 缓存 ad 时遇到内部错误
 
     可能是因为 `package="org.cocos2dx.cpp"` 的原因，更换一个 id 就能迅速工作了。
+    
+3. android 缓存不下广告
+
+    需要注意 logcat 的输出：
+    ```
+    Use AdRequest.Builder.addTestDevice("FE20924C46522E2E204587EB339897C6") to get test ads on this device.
+    ```
