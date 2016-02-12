@@ -35,7 +35,7 @@ Uncaught SecurityError: Failed to execute 'texImage2D' on 'WebGLRenderingContext
             background-color: #000000;
         }
     </style>
-    <script src="pixi.min.js"></script>
+    <script src="http://cdn.bootcss.com/pixi.js/3.0.9/pixi.min.js"></script>
 </head>
 <body>
     <script type="text/javascript">
@@ -48,7 +48,7 @@ Uncaught SecurityError: Failed to execute 'texImage2D' on 'WebGLRenderingContext
 
         var self = this;
         self.bunny = null;
-        PIXI.loader.add('bunny', 'bunny.png').load(function (loader, resources) {
+        PIXI.loader.add('bunny', 'https://raw.githubusercontent.com/pixijs/examples/gh-pages/_assets/bunny.png').load(function (loader, resources) {
             // This creates a texture from a 'bunny.png' image.
             var bunny = new PIXI.Sprite(resources.bunny.texture);
             self.bunny = bunny;
